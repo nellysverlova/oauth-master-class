@@ -43,7 +43,14 @@ window.onload = () => {
          response_type: 'token',
          redirect_uri: 'https://oauth-master-psi.vercel.app/token.html'
       },
-      'https://oauth-master-psi.vercel.app'
+      'https://oauth-master-psi.vercel.app',
+      {
+        parentId: "buttonContainer",
+        view: "button",
+        buttonTheme: "light",
+        buttonSize: "xs",
+        buttonBorderRadius: 20,
+      }
    )
 
     .then(({ handler }) => handler())
